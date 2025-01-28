@@ -43,7 +43,7 @@ class KafkaReader:
         self.bootstrap_servers = bootstrap_servers
         self.partition_paused = 0
         self.partition_total = 0
-        self.timeout_in_s = 10
+        self.timeout_in_s = 60
 
         self.group_id_suffix = group_id_suffix
         if self.group_id_suffix is None:
